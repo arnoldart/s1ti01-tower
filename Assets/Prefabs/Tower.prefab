@@ -184,8 +184,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _towerPlace: {fileID: 2988254603547393947}
   _towerHead: {fileID: 8811252855202845234}
-  _shootPower: 1
+  _shootPower: 2
   _shootDistance: 5
-  _shootDelay: 5
+  _shootDelay: 3
   _bulletSpeed: 4
   _bulletSplashRadius: 0

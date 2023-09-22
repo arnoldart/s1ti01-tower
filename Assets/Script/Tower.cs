@@ -8,6 +8,8 @@ public class Tower : MonoBehaviour
     [SerializeField] private SpriteRenderer _towerPlace;
     [SerializeField] private SpriteRenderer _towerHead;
 
+    public Vector2? PlacePosition { get; private set; }
+
     // Tower Properties
     [SerializeField] private int _shootPower = 1;
     [SerializeField] private float _shootDistance = 1f;
@@ -19,5 +21,23 @@ public class Tower : MonoBehaviour
     public Sprite GetTowerHeadIcon()
     {
         return _towerHead.sprite;
+    }
+
+    public void SetPlacePosition(Vector2? newPosition)
+    {
+        PlacePosition = newPosition;
+    }
+
+    public void LockPlacement()
+    {
+        transform.position = (Vector2)PlacePosition;
+    }
+
+    // Mengubah order in layer pada tower yang sedang di drag
+    public void ToggleOrderInLayer(bool toFront)
+    {
+        int orderInLayer = toFront ? 2 : 0;
+        _towerPlace.sortingOrder = orderInLayer;
+        _towerHead.sortingOrder = orderInLayer;
     }
 }

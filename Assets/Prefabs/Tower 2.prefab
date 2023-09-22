@@ -12,6 +12,18 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4880440594221324353, guid: 70e09c9b00332bb49afd1690de44e169, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4880440594221324353, guid: 70e09c9b00332bb49afd1690de44e169, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4880440594221324353, guid: 70e09c9b00332bb49afd1690de44e169, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4880440594221324353, guid: 70e09c9b00332bb49afd1690de44e169, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -51,9 +63,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8811252855202845234, guid: 70e09c9b00332bb49afd1690de44e169, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f2f2a9ff7050b6e43a0d1c9e66803b59, type: 3}
     - target: {fileID: 8890636825302008428, guid: 70e09c9b00332bb49afd1690de44e169, type: 3}
       propertyPath: m_Name
-      value: Tower
+      value: Tower 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70e09c9b00332bb49afd1690de44e169, type: 3}

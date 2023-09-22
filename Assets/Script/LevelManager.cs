@@ -6,6 +6,8 @@ public class LevelManager : MonoBehaviour
 {
     // Fungsi Singleton
     private static LevelManager _instance = null;
+
+    private List<Tower> _spawnedTowers = new List<Tower>();
     public static LevelManager Instance
     {
         get
@@ -41,5 +43,10 @@ public class LevelManager : MonoBehaviour
             newTowerUI.SetTowerPrefab(tower);
             newTowerUI.transform.name = tower.name;
         }
+    }
+
+    public void RegisterSpawnedTower(Tower tower)
+    {
+        _spawnedTowers.Add(tower);
     }
 }
